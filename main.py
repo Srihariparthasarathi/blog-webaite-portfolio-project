@@ -13,6 +13,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from functools import wraps
 import os
+import gunicorn
 
 
 app = Flask(__name__)
